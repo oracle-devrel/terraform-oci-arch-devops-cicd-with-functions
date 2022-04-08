@@ -2,7 +2,7 @@
 
 In this reference architecture, you will build and deploy Python applications using OCI DevOps and OCI function services. The application source code is hosted on a DevOps code repository. The end-user commits the code into the code repository. A new commit to the code repository will trigger the start of a build pipeline. The build pipeline follows a user-defined flow to build the function artifacts to deploy to OCI Function services. The build's output is stored in the container registry as docker images. Then a deployment pipeline uses the built image from the container registry and deploys it to the OCI Function environment. The illustration covers the build and deployment of application build and deployment using a default image and a custom image (Using a docker file).
 
-For details of the architecture, see [Build a continuous integration and deployment pipeline using Oracle DevOps service](https://docs.oracle.com/en/solutions/ci-cd-pipe-oci-devops-with-functions/index.html)
+For details of the architecture, see [Build a CI/CD pipeline by using Oracle Cloud Infrastructure DevOps service and OCI Functions](https://docs.oracle.com/en/solutions/ci-cd-pipe-oci-devops-with-functions/index.html)
 
 ## Terraform Provider for Oracle Cloud Infrastructure
 The OCI Terraform Provider is now available for automatic download through the Terraform Provider Registry. 
@@ -102,3 +102,18 @@ As this a function the validation to be done via logs . Use OCI Logs for functio
 When you no longer need the deployment, you can run this command to destroy it:
 
     terraform destroy
+    
+## Contributing
+This project is open source.  Please submit your contributions by forking this repository and submitting a pull request!  Oracle appreciates any contributions that are made by the open source community.
+
+### Attribution & Credits
+Initially, this project was created and distributed in [GitHub Oracle QuickStart space](https://github.com/oracle-quickstart/oci-arch-devops-cicd-with-functions). For that reason, we would like to thank all the involved contributors enlisted below:
+- Lukasz Feldman (https://github.com/lfeldman)
+- Rahul M R (https://github.com/RahulMR42)
+
+## License
+Copyright (c) 2021 Oracle and/or its affiliates.
+
+Licensed under the Universal Permissive License (UPL), Version 1.0.
+
+See [LICENSE](LICENSE) for more details.
