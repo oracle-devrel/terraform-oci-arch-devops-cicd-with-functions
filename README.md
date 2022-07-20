@@ -36,10 +36,22 @@ and [setup guide](https://www.terraform.io/docs/providers/oci/guides/version-3-u
 
 ### Validate the execution 
 
-As this a function the validation to be done via logs . Use OCI Logs for function execution and watch for logs like below .
+- The pipeline will deploy the new function code but wont execute. To check the execution follow *OCI Console* >*Application* > *Application Name*>Getting started (except setting up the java application).
 
 ```
-"Invoked function with default  image" and 
+$ fn use context <oci-region>
+$ fn update context <compartment-ocid>
+$ fn update context registry <oci-region>.ocir.io/<nameSpace>/[repo-name-prefix]
+$ fn list apps and validate the application name.
+$ setup the container registry login
+$ fn invoke <app-nanme> <function-name-for-default-image>
+$ fn invoke <app-nanme> <function-name-for-custom-image>
+```
+
+- Post the invoke check back the logs and can verify the execution.
+
+```
+"Invoked function with default image" and 
 "Invoked function with custom image" 
 ```
 
@@ -91,7 +103,19 @@ Deploy:
 
 ### Validate the execution 
 
-As this a function the validation to be done via logs . Use OCI Logs for function execution and watch for logs like below .
+- The pipeline will deploy the new function code but wont execute. To check the execution follow *OCI Console* >*Application* > *Application Name*>Getting started (except setting up the java application).
+
+```
+$ fn use context <oci-region>
+$ fn update context <compartment-ocid>
+$ fn update context registry <oci-region>.ocir.io/<nameSpace>/[repo-name-prefix]
+$ fn list apps and validate the application name.
+$ setup the container registry login
+$ fn invoke <app-nanme> <function-name-for-default-image>
+$ fn invoke <app-nanme> <function-name-for-custom-image>
+```
+
+- Post the invoke check back the logs and can verify the execution.
 
 ```
 "Invoked function with default image" and 
