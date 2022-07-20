@@ -206,7 +206,7 @@ variables:
 
   git_repo_name:
     type: string
-    default: "oci-sample-function-with-python"
+    default: "python-oci-devops-function"
     required: false
     title: "GitHub repository name"
     description: "GitHub repository name with the source of the code to be build and deployed."
