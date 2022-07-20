@@ -199,7 +199,7 @@ variables:
 
   git_repo:
     type: string
-    default: "https://github.com/RahulMR42/oci-sample-function-with-python"
+    default: "https://github.com/oracle-devrel/python-oci-devops-function"
     required: false
     title: "GitHub repository URL"
     description: "GitHub repository URL with the source of the code to be build and deployed." 
