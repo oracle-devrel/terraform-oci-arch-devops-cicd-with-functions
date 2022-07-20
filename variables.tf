@@ -15,7 +15,7 @@ variable "app_name" {
 
 variable "release" {
   description = "Reference Architecture Release (OCI Architecture Center)"
-  default     = "1.2"
+  default     = "1.3"
 }
 
 variable "execute_deployment" {
@@ -117,7 +117,7 @@ variable "git_repo" {
 }
 
 variable "git_repo_name" {
-  default = "oci-sample-function-with-python"
+  default = "python-oci-devops-function"
 }
 
 variable "repository_repository_type" {
